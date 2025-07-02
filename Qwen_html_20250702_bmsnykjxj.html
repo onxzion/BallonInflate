@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balloon Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Initial Balloon Screen -->
+  <div id="balloon-screen" class="hidden">
+    <h1>Hold onto the balloon until it pops!</h1>
+    <div id="balloon" class="balloon"></div>
+    <button id="pop-balloon">Pop the balloon!</button>
+  </div>
+
+  <!-- Main Page -->
+  <div id="main-page" class="hidden">
+    <h1>Welcome to the Main Page</h1>
+    <p>This balloon inflates/deflates based on the market cap of Bitcoin.</p>
+    <div id="dynamic-balloon" class="balloon"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Balloon Styles */
+.balloon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: orange;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-70%) scale(1.2);
+  }
+}
+
+/* Button Styles */
+#pop-balloon {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#pop-balloon:hover {
+  background-color: #218838;
+}
